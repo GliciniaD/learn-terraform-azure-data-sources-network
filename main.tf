@@ -10,3 +10,6 @@ terraform {
 provider "azurerm" {
   features {}
 }
+
+#This is so that eads whatever identity Terraform is currently authenticated as.
+data "azurerm_client_config" "current" {}
